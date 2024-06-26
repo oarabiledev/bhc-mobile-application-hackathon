@@ -27,15 +27,13 @@ app.LoadPlugin("Animator");
 
 app.EnableBackKey(false);
 
-const firebaseConfig = {
-    // REDACTED FOR SECURITY REASONS
-};
+const firebaseConfig = "REDACTED FOR SECURITY"
 
 let myriadpro = 'Misc/MYRIADPRO-REGULAR.OTF';
 
 app.Script('Misc/firebase-app.js');
 app.Script('Misc/firebase-firestore.js')
-app.Script('firebase-storage.js')
+app.Script('Misc/firebase-storage.js')
 app.Script('Misc/firebase-auth.js')
 
 function OnStart() {
